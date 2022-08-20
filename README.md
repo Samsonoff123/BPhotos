@@ -33,7 +33,7 @@
 
 Клонировать репозиторий:
 
-    git clone 
+    git clone https://github.com/Samsonoff123/BPhotos.git
 
 Установить зависимости:
 
