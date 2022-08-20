@@ -1,0 +1,14 @@
+.profile__info {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: calc((100vw - 320px) / (1280 - 320) * (480 - 285) + 285px);
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 1280px) {
+  .profile__info {
+    max-width: 480px;
+    justify-content: center;
+  }
+}

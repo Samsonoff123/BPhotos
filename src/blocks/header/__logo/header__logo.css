@@ -1,0 +1,13 @@
+.header__logo {
+  width: calc((100vw - 320px) / (1280 - 320) * (142 - 103.7) + 103.7px);
+  object-fit: cover;
+  padding-left: calc((100vw - 320px) / (1280 - 320) * (0 - 27) + 27px);
+}
+
+@media screen and (min-width: 1280px) {
+  .header__logo {
+    width: 142px;
+    height: 85px;
+    padding-left: 0;
+  }
+}

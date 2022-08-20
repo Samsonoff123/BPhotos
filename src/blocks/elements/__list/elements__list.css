@@ -1,0 +1,47 @@
+.elements__list {
+  cursor: grab;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 770px;
+  gap: 20px 17px;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+  color: #000;
+}
+
+.elements__list::-webkit-scrollbar {
+  width: 2.5px;
+  height: 2.5px;
+}
+
+/* Track */
+.elements__list::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px black; 
+  border-radius: 2.5px;
+}
+ 
+/* Handle */
+.elements__list::-webkit-scrollbar-thumb {
+  background: rgb(38, 38, 38); 
+  border-radius: 2.5px;
+}
+
+/* Handle on hover */
+.elements__list::-webkit-scrollbar-thumb:hover {
+  background: rgb(79, 79, 79); 
+}
+
+@media (max-width: 1280px) {
+  .elements__list {
+    cursor: auto;
+    overflow: visible;
+    display: grid;
+    height: auto;
+    grid-template-columns: repeat(auto-fit, minmax(282px, 1fr));
+  }
+}
